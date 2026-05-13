@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <title>AR1: 硬件解剖与坐标系交付版</title>
     
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+   <meta http-equiv="Content-Security-Policy" content="
+    default-src * 'unsafe-inline' 'unsafe-eval';
+    script-src * 'unsafe-inline' 'unsafe-eval';
+    connect-src * 'unsafe-inline';
+    img-src * data: blob: 'unsafe-inline';
+    frame-src *;
+    style-src * 'unsafe-inline';
+    worker-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+    child-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+    ">
 
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
